@@ -1,0 +1,58 @@
+
+body{
+  color: lightgray;
+}
+main{
+  min-height: 80vh;
+}
+.rating span{
+  margin: 0.1rem;
+}
+h4{
+  color: lightgray;
+}
+h3{
+  padding: 1rem 0;
+  color: lightgray;
+}
+
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: lightgray
+}
+
+h2{
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: lightgray;
+}
+
+.brand{
+  color: lightblue;
+  font-family: 'Sono' 
+}
+
+.icon{
+  font-size: 3.5rem;
+  color: lightblue;
+  padding: 10px;
+}
+.skills{
+  font-size: 1.2rem;
+  color: lightgray;
+}
+.editor{
+  
+  border: 1px dashed white;
+  width: 800px;
+  height: 500px;
+}
+.highlighted-text{
+  color: lightblue;
+  font-weight: bolder;
+}
+.about{
+  font-size: 1.2rem;
+  color:lightgray
+}
