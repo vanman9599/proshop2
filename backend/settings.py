@@ -133,10 +133,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'proshop',
-        'USER': 'proshop',
-        'PASSWORD': 'Canopy-9m-ok',
-        'HOST': '34.83.30.16',
+        'NAME': 'dapfv60mij6528',
+        'USER': 'evceblzsoapiix',
+        'PASSWORD': '864b9a283eedce2ca6b0855871a7d1a5894a814de5cf5dd2b1528abeb601eb73',
+        'HOST': 'ec2-44-213-228-107.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
