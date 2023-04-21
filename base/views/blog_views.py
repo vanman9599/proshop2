@@ -14,6 +14,6 @@ from rest_framework import status
 
 @api_view(['GET'])
 def getBlogs(request):
-    blogs = Blog.objects.filter(isHidden=False).order_by('-_id').values()
+    blogs = Blog.objects.filter(isHidden=False).order_by('-_id')
     serializer = BlogSerializer(blogs, many=True)
     return Response(serializer.data)
