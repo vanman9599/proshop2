@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-28&b$qkqb@6w91f#w&gxu#o&f520&8*j21s(&c1ptcxyl347*k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', ".herokuapp.com",
-                 'vanjordan.com', 'vanjordan-proshop.herokuapp.com']
+ALLOWED_HOSTS = [".herokuapp.com", 'www.vanjordan.com', 'vanjordan.com',
+                 'vanjordan-proshop.herokuapp.com']
 
 
 # Application definition
