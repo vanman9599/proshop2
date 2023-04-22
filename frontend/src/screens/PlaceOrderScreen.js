@@ -123,7 +123,7 @@ function PlaceOrderScreen() {
                     </ListGroup.Item>
 
                     <ListGroup.Item>
-                       {error && <Message variant='danger'>{error}</Message>}
+                       {error && <Message variant='danger'>An error occurred: Login/Registration required.</Message>}
                     </ListGroup.Item>
 
                     <ListGroup.Item>
