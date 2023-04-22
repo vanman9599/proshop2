@@ -56,10 +56,13 @@ h2{
   font-weight: bolder;
 }
 
-
+.about{
+  font-size: 1.2rem;
+  color:lightgray
+}
 @media screen and (max-width: 600px) {
   /* styles for mobile browsers smaller than 600px; (iPhone) */
-  .about{
+  .posts{
     font-size: 1.2rem;
     color:lightgray
   }
@@ -67,7 +70,7 @@ h2{
 
 @media screen and (min-width: 600px) {
   /* styles for mobile browsers bigger than 600px; (iPhone) */
-  .about{
+  .posts{
     font-size: 1.8rem;
     color:lightgray
   }
