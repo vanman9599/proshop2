@@ -135,7 +135,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dapfv60mij6528',
         'USER': 'evceblzsoapiix',
-        'PASSWORD': '864b9a283eedce2ca6b0855871a7d1a5894a814de5cf5dd2b1528abeb601eb73',
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': 'ec2-44-213-228-107.compute-1.amazonaws.com',
         'PORT': '5432'
     }
@@ -199,8 +199,8 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
 
 AWS_QUERYSTRING_AUTH = False
-AWS_ACCESS_KEY_ID = 'AKIA2PGYAYK7IGWYMMDS'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'vanjordan-proshop'
 
 
