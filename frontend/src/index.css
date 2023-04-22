@@ -71,7 +71,7 @@ h2{
 @media screen and (min-width: 600px) {
   /* styles for mobile browsers bigger than 600px; (iPhone) */
   .posts{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color:lightgray
   }
 }
