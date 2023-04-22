@@ -28,7 +28,8 @@ h2{
   color: lightgray;
 }
 .mail{
-  color: lightgray
+  color: lightgray;
+  text-decoration-line: none;
 }
 .brand{
   color: lightblue;
