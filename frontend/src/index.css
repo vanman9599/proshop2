@@ -55,7 +55,20 @@ h2{
   color: lightblue;
   font-weight: bolder;
 }
-.about{
-  font-size: 1.2rem;
-  color:lightgray
+
+
+@media screen and (max-width: 600px) {
+  /* styles for mobile browsers smaller than 600px; (iPhone) */
+  .about{
+    font-size: 1.2rem;
+    color:lightgray
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* styles for mobile browsers bigger than 600px; (iPhone) */
+  .about{
+    font-size: 1.8rem;
+    color:lightgray
+  }
 }
