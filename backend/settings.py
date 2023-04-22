@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-28&b$qkqb@6w91f#w&gxu#o&f520&8*j21s(&c1ptcxyl347*k
 DEBUG = True
 
 ALLOWED_HOSTS = [".herokuapp.com", 'www.vanjordan.com', 'vanjordan.com',
-                 'vanjordan-proshop.herokuapp.com']
+                 'vanjordan-proshop.herokuapp.com', ".paypal.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
