@@ -12,7 +12,7 @@ function AboutScreen() {
                     <ListGroup.Item>
                     <h3>Van Jordan</h3>
                     <h4>Full Stack Engineer</h4>
-                       <h4>vanmjordan@gmail.com</h4>  
+                       <h4>Email: <a href="mailto:van@aspiresolutions.tech">van@aspiresolutions.tech</a></h4>  
                     
                     </ListGroup.Item>
                     
