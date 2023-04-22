@@ -48,7 +48,7 @@ function AboutScreen() {
                                <h5>You may want to get in touch with me if:</h5> 
                                 <ul>
                                     <li>
-                                        You are a startup looking for a Techical Co-founder. I'm open to these types of opportunities. I'd love to hear about your idea/product.
+                                        You are a startup looking for a Technical Co-founder. I'm open to these types of opportunities. I'd love to hear about your idea/product.
                                     </li>
                                     <li>
                                         You are a recruiter looking to hire someone with soft-skills with the ability to pick-up hard skills quickly. 

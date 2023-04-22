@@ -36,7 +36,7 @@ function OrderScreen() {
     
    // clientID AXuKnhlrSo6_vFqMFq5exxDmgbgguubVmrOkP7Zu8bhB0AhAgNfbFvYbZj4gZYtMy3LbX890BYpTb-Hb
 
-   const clientId = 'AXuKnhlrSo6_vFqMFq5exxDmgbgguubVmrOkP7Zu8bhB0AhAgNfbFvYbZj4gZYtMy3LbX890BYpTb-Hb'
+   const clientId = 'Aa2npL28p5H071BSkkqPgVfN4gnuYY0q8yMkt93vhxPm0wtdg2aMg13mwsq2udu9JbJkl1y01leQ8xd9'
    const options = {clientId: clientId, currency: "USD", intent: "capture"}
 const addPayPalScript = ()=>{
     
