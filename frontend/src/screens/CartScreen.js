@@ -37,7 +37,7 @@ const checkoutHandler = () => {
      <Col md={8}>
     <h1>Shopping Cart</h1>
     {cartItems.length ===0 ? (
-      <Message variant="info">Your cart is empty <Link to="/">Go back</Link></Message>
+      <Message variant="info">Your cart is empty <Link to="/store">Go back</Link></Message>
     ):(
       <ListGroup variant="flush">
         {cartItems.map(item=> (
