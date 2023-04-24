@@ -45,7 +45,7 @@ function BlogScreen() {
                     <ListGroup variant="flush">
                     <ListGroup.Item>
              <h1 className="highlighted-text pt-5" >{blog.title}</h1>
-             <span className="about higlighted-text">{theDate}</span>
+             <span className="posts higlighted-text">{theDate}</span>
           <p className="posts" style={{margin: '2rem'}} dangerouslySetInnerHTML={{__html: blog.body}}></p>
           </ListGroup.Item>
           </ListGroup>
