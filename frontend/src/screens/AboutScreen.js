@@ -45,7 +45,7 @@ function AboutScreen() {
                         </Row>
                         <Row>
                             <Col className="p-5 posts">
-                               <h5>You may want to get in touch with me if:</h5> 
+                               <span className="posts">You may want to get in touch with me if:</span> 
                                 <ul>
                                     <li>
                                         You are a startup looking for a Technical Co-founder. I'm open to these types of opportunities. I'd love to hear about your idea/product.
