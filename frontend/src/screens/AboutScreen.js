@@ -109,8 +109,8 @@ function AboutScreen() {
                        <li className="p-2"><span className="highlighted-text">Programming Languages:</span> C, PHP, Python, Javascript, Java</li>
                        <li className="p-2"><span  className="highlighted-text">Database Programming:</span> SQL, T-SQL, PL/SQL, PSQL</li>
                        <li className="p-2"><span  className="highlighted-text">Methodologies:</span> Agile, OOP, Functional Programming, Design Patterns, Microservices</li> 
-                       <li className="p-2"><span  className="highlighted-text">Frontend:</span> HTML, CSS, Javascript, Bootstrap, React</li>
-                       <li className="p-2"><span  className="highlighted-text">Backend:</span> Python, Django, Node, Express, RESTful APIs</li>  
+                       <li className="p-2"><span  className="highlighted-text">Frontend:</span> HTML, CSS, Javascript, Bootstrap, React/Redux/Next.js</li>
+                       <li className="p-2"><span  className="highlighted-text">Backend:</span> PHP/CodeIgniter, Python/Django, Node, Express, RESTful APIs</li>  
                        <li className="p-2"><span  className="highlighted-text">DevOps:</span> CI/CD, Linux, Kubernetes, Docker, AWS</li> 
                        <li className="p-2"><span  className="highlighted-text"> Tools:</span> Git, Jira</li>     
                     </ul>                          
