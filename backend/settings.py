@@ -38,11 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+
     'base.apps.BaseConfig',
     'rest_framework',
     'corsheaders',
-    'storages'
+    'storages',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary'
 ]
 # Django project settings.py
 
@@ -193,17 +196,22 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # django < 4.2
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # django >= 4.2
-STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
+# STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
 
-AWS_QUERYSTRING_AUTH = False
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_QUERYSTRING_AUTH = False
+# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-AWS_STORAGE_BUCKET_NAME = 'vanjordan-proshop'
+# AWS_STORAGE_BUCKET_NAME = 'vanjordan-proshop'
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dbfsqknla',
+    'API_KEY': os.environ.get('API_KEY'),
+    'API_SECRET': os.environ.get("API_SECRET")
+}
 
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
