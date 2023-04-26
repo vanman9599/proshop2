@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
     'base.apps.BaseConfig',
     'rest_framework',
     'corsheaders',
@@ -195,15 +197,13 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-
-# django >= 4.2
-STORAGES = {"default": {
-    "BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}}
-
-GOOGLE_APPLICATION_CREDENTIALS = './blog-384916-6f72de9851fd.json'
-GS_BUCKET_NAME = 'vanjordan-proshop2'
-
+# DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+# # django >= 4.2
+# STORAGES = {"default": {
+#     "BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}}
+# GOOGLE_APPLICATION_CREDENTIALS = './blog-384916-6f72de9851fd.json'
+# GS_BUCKET_NAME = 'vanjordan-proshop2'
+CLOUDIARY_URL = os.environ.get("CLOUDINARY_URL")
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
