@@ -201,6 +201,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 STORAGES = {"default": {
     "BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}}
 
+GOOGLE_APPLICATION_CREDENTIALS = './blog-384916-6f72de9851fd.json'
 GS_BUCKET_NAME = 'vanjordan-proshop2'
 
 if os.getcwd() == '/app':
