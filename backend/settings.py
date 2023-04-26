@@ -204,6 +204,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # GOOGLE_APPLICATION_CREDENTIALS = './blog-384916-6f72de9851fd.json'
 # GS_BUCKET_NAME = 'vanjordan-proshop2'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+API_KEY = os.environ.get("API_KEY")
+API_SECRET = os.environ.get("API_SECRET")
+CLOUD_NAME = 'dbfsqknla'
 CLOUDIARY_URL = os.environ.get("CLOUDINARY_URL")
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
