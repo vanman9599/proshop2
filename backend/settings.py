@@ -201,7 +201,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 STORAGES = {"default": {
     "BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}}
 
-GS_BUCKET_NAME = 'vanjordan-proshop'
+GS_BUCKET_NAME = 'vanjordan-proshop2'
 
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
