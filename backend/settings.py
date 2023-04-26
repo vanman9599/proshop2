@@ -30,7 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [".herokuapp.com", 'www.vanjordan.com', 'vanjordan.com',
                  'vanjordan-proshop.herokuapp.com', ".paypal.com", "localhost", "127.0.0.1"]
 
-
+CSRF_TRUSTED_ORIGINS = ['https://www.vanjordan.com', 'https://vanjordan.com',
+                        "https://localhost", "https://127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -137,7 +138,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dapfv60mij6528',
         'USER': 'evceblzsoapiix',
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'PASSWORD': '864b9a283eedce2ca6b0855871a7d1a5894a814de5cf5dd2b1528abeb601eb73',
         'HOST': 'ec2-44-213-228-107.compute-1.amazonaws.com',
         'PORT': '5432'
     }
