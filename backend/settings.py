@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,14 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-
+    'django.contrib.staticfiles',
     'base.apps.BaseConfig',
     'rest_framework',
     'corsheaders',
     'storages',
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary'
+
 ]
 # Django project settings.py
 
@@ -195,23 +194,13 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# django < 4.2
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 
 # django >= 4.2
-# STORAGES = {"default": {"BACKEND": "storages.backends.s3boto3.S3Boto3Storage"}}
+STORAGES = {"default": {
+    "BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}}
 
-# AWS_QUERYSTRING_AUTH = False
-# AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-
-# AWS_STORAGE_BUCKET_NAME = 'vanjordan-proshop'
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dbfsqknla',
-    'API_KEY': os.environ.get('API_KEY'),
-    'API_SECRET': os.environ.get("API_SECRET")
-}
+GS_BUCKET_NAME = 'vanjordan-proshop'
 
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
