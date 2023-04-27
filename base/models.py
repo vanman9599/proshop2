@@ -96,4 +96,9 @@ class Blog(models.Model):
     updatedAt = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return str(self.title)
+
+        if self.isHidden:
+            status = 'deleted'
+        else:
+            status = 'live'
+        return str(self.title, status)
