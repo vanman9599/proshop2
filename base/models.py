@@ -101,4 +101,4 @@ class Blog(models.Model):
             status = 'deleted'
         else:
             status = 'live'
-        return str(self.title, status)
+        return str(self.title + ", " + status)
