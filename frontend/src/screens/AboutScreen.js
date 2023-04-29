@@ -12,7 +12,7 @@ function AboutScreen() {
                     <ListGroup.Item>
                     <h3>Van Jordan</h3>
                     <h4>Full Stack Engineer</h4>
-                       <h4><a className="mail" href="mailto:van@aspiresolutions.tech">van@aspiresolutions.tech</a></h4>  
+                       <h4><a className="mail" href="mailto:vanmjordan@gmail.com">vanmjordan@gmail.com</a></h4>  
                     
                     </ListGroup.Item>
                     
@@ -23,7 +23,7 @@ function AboutScreen() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="p-5 posts"><p>Please don't get upset at the prices of my books. I'm obviously not trying to sell books, but if you do happen to order one, I'll be happy to get that to you. I really just don't have anything to sell at the moment. If you think this website is just for my portfolio, you are absolutely correct. I mostly like to work on MERN projects, but this actually has a Python/Django backend. The shopping functionality was done as a guided learning experience courtesy of Brad Traversy & Dennis Ivy. </p>
+                            <Col className="p-5 posts"><p>Please don't get upset at the prices of my books. I'm obviously not trying to sell books, but if you do happen to order one, I'll be happy to get that to you. I really just don't have anything to sell at the moment. If you think this website is just for my portfolio, you are absolutely correct. I mostly like to work on MERN projects, but this actually has a Python/Django backend. The shopping functionality was done as a guided learning experience courtesy of Dennis Ivy. </p>
                             
                             <p>So now that you're here, let me just say I'm looking for great opportunities. If you are looking for someone who has excellent problem solving skills, please consider hiring me. I will do back-flips for you - and my coding isn't too bad. By the way, I don't hate Chinese people. Say no to Asian hate.</p>
 

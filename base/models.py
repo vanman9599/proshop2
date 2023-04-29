@@ -98,7 +98,7 @@ class Blog(models.Model):
     def __str__(self):
 
         if self.isHidden:
-            status = 'deleted'
+            status = 'DELETED'
         else:
             status = 'live'
         return str(self.title + ", " + status)
